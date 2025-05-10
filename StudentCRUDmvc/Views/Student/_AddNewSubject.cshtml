@@ -1,0 +1,10 @@
+﻿@model StudentCRUDmvc.Models.Subject
+<div id="rc">
+    <div>
+        @Html.DropDownListFor(s => s.Sub_id, ViewBag.subject as
+       SelectList, "---Select Subject---", new { @class = "form-control" })
+    </div>
+    <div>
+        <button type="button" id="remove" class="btn btndanger">Remove</button>
+    </div>
+</div>

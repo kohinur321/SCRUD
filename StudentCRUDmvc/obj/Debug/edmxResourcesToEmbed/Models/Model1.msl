@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NurModelStoreContainer" CdmEntityContainer="NurEntities">
+    <EntitySetMapping Name="Admissions">
+      <EntityTypeMapping TypeName="NurModel.Admission">
+        <MappingFragment StoreEntitySet="Admission">
+          <ScalarProperty Name="Admi_id" ColumnName="Admi_id" />
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="Sub_id" ColumnName="Sub_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="NurModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+          <ScalarProperty Name="Stu_name" ColumnName="Stu_name" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="MorningShift" ColumnName="MorningShift" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="NurModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Sub_id" ColumnName="Sub_id" />
+          <ScalarProperty Name="Sub_name" ColumnName="Sub_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

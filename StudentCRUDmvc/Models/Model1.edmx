@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="NurModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admission">
+          <Key>
+            <PropertyRef Name="Admi_id" />
+          </Key>
+          <Property Name="Admi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Stu_id" Type="int" />
+          <Property Name="Sub_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Stu_id" />
+          </Key>
+          <Property Name="Stu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Stu_name" Type="varchar" MaxLength="50" />
+          <Property Name="Age" Type="int" />
+          <Property Name="DateOfBirth" Type="date" />
+          <Property Name="MorningShift" Type="bit" />
+          <Property Name="Picture" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Sub_id" />
+          </Key>
+          <Property Name="Sub_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sub_name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__Admission__Stu_i__286302EC">
+          <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+          <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="Stu_id" />
+            </Principal>
+            <Dependent Role="Admission">
+              <PropertyRef Name="Stu_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Admission__Sub_i__29572725">
+          <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+          <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subject">
+              <PropertyRef Name="Sub_id" />
+            </Principal>
+            <Dependent Role="Admission">
+              <PropertyRef Name="Sub_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NurModelStoreContainer">
+          <EntitySet Name="Admission" EntityType="Self.Admission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Admission__Stu_i__286302EC" Association="Self.FK__Admission__Stu_i__286302EC">
+            <End Role="Student" EntitySet="Student" />
+            <End Role="Admission" EntitySet="Admission" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Admission__Sub_i__29572725" Association="Self.FK__Admission__Sub_i__29572725">
+            <End Role="Subject" EntitySet="Subject" />
+            <End Role="Admission" EntitySet="Admission" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NurModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admission">
+          <Key>
+            <PropertyRef Name="Admi_id" />
+          </Key>
+          <Property Name="Admi_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Stu_id" Type="Int32" />
+          <Property Name="Sub_id" Type="Int32" />
+          <NavigationProperty Name="Student" Relationship="Self.FK__Admission__Stu_i__286302EC" FromRole="Admission" ToRole="Student" />
+          <NavigationProperty Name="Subject" Relationship="Self.FK__Admission__Sub_i__29572725" FromRole="Admission" ToRole="Subject" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Stu_id" />
+          </Key>
+          <Property Name="Stu_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Stu_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+          <Property Name="MorningShift" Type="Boolean" />
+          <Property Name="Picture" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Admissions" Relationship="Self.FK__Admission__Stu_i__286302EC" FromRole="Student" ToRole="Admission" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Sub_id" />
+          </Key>
+          <Property Name="Sub_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sub_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Admissions" Relationship="Self.FK__Admission__Sub_i__29572725" FromRole="Subject" ToRole="Admission" />
+        </EntityType>
+        <Association Name="FK__Admission__Stu_i__286302EC">
+          <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+          <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Student">
+              <PropertyRef Name="Stu_id" />
+            </Principal>
+            <Dependent Role="Admission">
+              <PropertyRef Name="Stu_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Admission__Sub_i__29572725">
+          <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+          <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Subject">
+              <PropertyRef Name="Sub_id" />
+            </Principal>
+            <Dependent Role="Admission">
+              <PropertyRef Name="Sub_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NurEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admissions" EntityType="Self.Admission" />
+          <EntitySet Name="Students" EntityType="Self.Student" />
+          <EntitySet Name="Subjects" EntityType="Self.Subject" />
+          <AssociationSet Name="FK__Admission__Stu_i__286302EC" Association="Self.FK__Admission__Stu_i__286302EC">
+            <End Role="Student" EntitySet="Students" />
+            <End Role="Admission" EntitySet="Admissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Admission__Sub_i__29572725" Association="Self.FK__Admission__Sub_i__29572725">
+            <End Role="Subject" EntitySet="Subjects" />
+            <End Role="Admission" EntitySet="Admissions" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NurModelStoreContainer" CdmEntityContainer="NurEntities">
+          <EntitySetMapping Name="Admissions">
+            <EntityTypeMapping TypeName="NurModel.Admission">
+              <MappingFragment StoreEntitySet="Admission">
+                <ScalarProperty Name="Admi_id" ColumnName="Admi_id" />
+                <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+                <ScalarProperty Name="Sub_id" ColumnName="Sub_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Students">
+            <EntityTypeMapping TypeName="NurModel.Student">
+              <MappingFragment StoreEntitySet="Student">
+                <ScalarProperty Name="Stu_id" ColumnName="Stu_id" />
+                <ScalarProperty Name="Stu_name" ColumnName="Stu_name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="MorningShift" ColumnName="MorningShift" />
+                <ScalarProperty Name="Picture" ColumnName="Picture" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subjects">
+            <EntityTypeMapping TypeName="NurModel.Subject">
+              <MappingFragment StoreEntitySet="Subject">
+                <ScalarProperty Name="Sub_id" ColumnName="Sub_id" />
+                <ScalarProperty Name="Sub_name" ColumnName="Sub_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

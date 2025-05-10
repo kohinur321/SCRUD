@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MVC\\StudentCRUDmvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\models\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\views\\student\\_addnewsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\views\\student\\_addnewsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\models\\vm\\studentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\models\\vm\\studentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\models\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\models\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|D:\\MVC\\StudentCRUDmvc\\studentcrudmvc\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{69BB6265-F07B-46CE-9F91-46987B78694F}|StudentCRUDmvc\\StudentCRUDmvc.csproj|solutionrelative:studentcrudmvc\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "StudentCRUDmvc\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:57:06.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StudentCRUDmvc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T17:48:48.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_AddNewSubject.cshtml",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\_AddNewSubject.cshtml",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Views\\Student\\_AddNewSubject.cshtml",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\_AddNewSubject.cshtml",
+              "RelativeToolTip": "StudentCRUDmvc\\Views\\Student\\_AddNewSubject.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T17:47:49.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "StudentCRUDmvc\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T17:44:42.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Studentvm.cs",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\VM\\Studentvm.cs",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Models\\VM\\Studentvm.cs",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\VM\\Studentvm.cs",
+              "RelativeToolTip": "StudentCRUDmvc\\Models\\VM\\Studentvm.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:38:24.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "StudentCRUDmvc\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T17:35:45.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "StudentCRUDmvc\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAA4wFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:34:07.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Models\\Model1.Context.cs",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.Context.cs",
+              "RelativeToolTip": "StudentCRUDmvc\\Models\\Model1.Context.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T17:32:23.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Model1.Context.tt",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.Context.tt",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Models\\Model1.Context.tt",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.Context.tt",
+              "RelativeToolTip": "StudentCRUDmvc\\Models\\Model1.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-09T17:32:13.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.edmx",
+              "RelativeDocumentMoniker": "StudentCRUDmvc\\Models\\Model1.edmx",
+              "ToolTip": "D:\\MVC\\StudentCRUDmvc\\StudentCRUDmvc\\Models\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "StudentCRUDmvc\\Models\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-05-09T17:29:26.881Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

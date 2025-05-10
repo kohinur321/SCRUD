@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NurModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admission">
+    <Key>
+      <PropertyRef Name="Admi_id" />
+    </Key>
+    <Property Name="Admi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stu_id" Type="int" />
+    <Property Name="Sub_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Stu_id" />
+    </Key>
+    <Property Name="Stu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stu_name" Type="varchar" MaxLength="50" />
+    <Property Name="Age" Type="int" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="MorningShift" Type="bit" />
+    <Property Name="Picture" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="Sub_id" />
+    </Key>
+    <Property Name="Sub_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Sub_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Admission__Stu_i__286302EC">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Stu_id" />
+      </Principal>
+      <Dependent Role="Admission">
+        <PropertyRef Name="Stu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Admission__Sub_i__29572725">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="0..1" />
+    <End Role="Admission" Type="Self.Admission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Sub_id" />
+      </Principal>
+      <Dependent Role="Admission">
+        <PropertyRef Name="Sub_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NurModelStoreContainer">
+    <EntitySet Name="Admission" EntityType="Self.Admission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Admission__Stu_i__286302EC" Association="Self.FK__Admission__Stu_i__286302EC">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="Admission" EntitySet="Admission" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Admission__Sub_i__29572725" Association="Self.FK__Admission__Sub_i__29572725">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="Admission" EntitySet="Admission" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

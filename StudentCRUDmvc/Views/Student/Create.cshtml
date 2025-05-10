@@ -1,0 +1,63 @@
+﻿@model StudentCRUDmvc.Models.VM.Studentvm
+@{
+    ViewBag.Title = "Create";
+}
+<h2>Create</h2>
+@using (Html.BeginForm("Create", "Student", FormMethod.Post, new
+{ enctype = "multipart/form-data" }))
+{
+    <div>
+        <div>
+            @Html.LabelFor(a => a.Stu_name)
+            <div>
+                @Html.TextBoxFor(b => b.Stu_name, new
+       { type = "text" })
+        </div>
+    </div>
+    <div>
+        @Html.LabelFor(a => a.Age)
+        <div>
+            @Html.TextBoxFor(b => b.Age, new
+            {
+  type = "number"
+            })
+    </div>
+</div>
+<div>
+    @Html.LabelFor(a => a.DateOfBirth)
+    <div>
+        @Html.TextBoxFor(b => b.DateOfBirth,
+new { type = "date" })
+</div>
+</div>
+<div>
+    @Html.LabelFor(a => a.MorningShift)
+    <div>@Html.CheckBox("MorningShift")</div>
+</div>
+<div>
+    @Html.LabelFor(a => a.Picture)
+    <div>
+        @Html.TextBoxFor(b => b.PictureFile,
+new { type = "file" })
+</div>
+</div>
+<div>
+    <div>
+        @Html.ActionLink("Add More", "",
+null, new { id = "addmore" })
+</div>
+</div>
+<div id="con">
+    @Html.Action("AddNewSubject",
+"Student")
+</div>
+<div>
+    <input type="submit"
+           value="Create" />
+</div>
+</div>
+}
+<div>
+    @Html.ActionLink("Back to List",
+"Index")
+</div>

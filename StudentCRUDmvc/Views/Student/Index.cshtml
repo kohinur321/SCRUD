@@ -1,0 +1,58 @@
+﻿@model IEnumerable<StudentCRUDmvc.Models.Student> 
+@{
+ ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<section>
+ @Html.ActionLink("Create", "Create")
+ <table>
+ <thead>
+ <tr>
+ <th>@Html.DisplayNameFor(a => a.Stu_name)</th>
+ <th>@Html.DisplayNameFor(a => a.Age)</th>
+ <th>@Html.DisplayNameFor(a => a.DateOfBirth)</th>
+ <th>@Html.DisplayNameFor(a => a.MorningShift)</th>
+ <th>@Html.DisplayNameFor(a => a.Picture)</th>
+ </tr>
+ </thead>
+ @foreach (var s in Model)
+ {
+ <tr>
+ <td>@Html.DisplayFor(m => s.Stu_name)</td>
+ <td>@Html.DisplayFor(m => s.Age)</td>
+ <td>@Html.DisplayFor(m => s.DateOfBirth)</td>
+ <td>@Html.DisplayFor(m => s.MorningShift)</td>
+ <td><img src="@s.Picture" height="50" width="50" /></td>
+ </tr>
+ <tr>
+ <td colspan="6">
+ <table>
+ <thead>
+ <tr>
+ <th>@Html.Label("Student id")</th>
+ <th>@Html.Label("Student name")</th>
+ </tr>
+ </thead>
+<tbody>
+ @foreach (var sub in s.Admissions)
+ {
+ <tr>
+ <td>@Html.DisplayFor(m => 
+sub.Subject.Sub_id)</td>
+ <td>@Html.DisplayFor(m => 
+sub.Subject.Sub_name)</td>
+ </tr>
+ }
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td colspan="12">
+ @Html.ActionLink("Edit", "Edit", new { id = s.Stu_id })
+ @Html.ActionLink("Delete", "Delete", new { id = s.Stu_id })
+ </td>
+ </tr>
+ }
+ </table>
+</section>
